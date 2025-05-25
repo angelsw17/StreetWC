@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Street Workout Calisthenics ®</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="login">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="contraseña" placeholder="Contraseña">
+        <button onclick="iniciarSesion()">Iniciar</button>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="circle"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <section class="servicios" id="servicios">
+        <i><h1>Nuestros Servicios</h1></i>
+        <div class="contenedor-servicios">
+            
+            <div class="servicio">
+                <img src="2.jpg" alt="Entrenamiento básico">
+                <h3>Entrenamiento Básico</h3>
+                <p class="precio">$500 MXN</p>
+                <div class="descripcion">Rutina para principiantes en calistenia, fortalecimiento y movilidad.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Entrenamiento Básico', '500')">Comprar</button>
+            </div>
+
+            <div class="servicio">
+                <img src="3.jpg" alt="Entrenamiento Avanzado">
+                <h3>Entrenamiento Avanzado</h3>
+                <p class="precio">$700 MXN</p>
+                <div class="descripcion">Plan avanzado con técnicas como front lever, muscle-up y más.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Entrenamiento Avanzado', '700')">Comprar</button>
+            </div>
+
+            <div class="servicio">
+                <img src="6.jpg" alt="Resistencia extrema">
+                <h3>Resistencia Extrema</h3>
+                <p class="precio">$800 MXN</p>
+                <div class="descripcion">Sesiones enfocadas en resistencia y recuperación muscular.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Resistencia Extrema', '800')">Comprar</button>
+            </div>
+
+            <div class="servicio">
+                <img src="7.jpg" alt="Flexibilidad y movilidad">
+                <h3>Flexibilidad y Movilidad</h3>
+                <p class="precio">$600 MXN</p>
+                <div class="descripcion">Rutinas para mejorar movilidad y prevenir lesiones.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Flexibilidad y Movilidad', '600')">Comprar</button>
+            </div>
+
+            <div class="servicio">
+                <img src="4.jpg" alt="Entrenamiento de fuerza">
+                <h3>Entrenamiento de Fuerza</h3>
+                <p class="precio">$900 MXN</p>
+                <div class="descripcion">Desarrollo de potencia y resistencia muscular avanzada.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Entrenamiento de Fuerza', '900')">Comprar</button>
+            </div>
+
+            <div class="servicio">
+                <img src="5.jpg" alt="Entrenamiento personalizado">
+                <h3>Entrenamiento Personalizado</h3>
+                <p class="precio">$1000 MXN</p>
+                <div class="descripcion">Planes de entrenamiento adaptados a tus necesidades y objetivos.</div>
+                <a href="mailto:workoutcalisthenicsstreet@gmail.com" class="dudas">Dudas sobre el servicio</a>
+                <button onclick="imprimirTicket('Entrenamiento Personalizado', '1000')">Comprar</button>
+            </div>
+
+        </div>
+    </section>
+<section class="comentarios">
+    <h2>Opiniones sobre nuestros servicios</h2>
+    <div id="comentarios-container"></div>
+<input type="text" id="nombreUsuario" placeholder="Tu usuario">
+    <textarea id="nuevoComentario" placeholder="Escribe tu comentario..."></textarea>
+    <button onclick="agregarComentario()">Publicar</button>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Street Workout Calisthenics ®</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
