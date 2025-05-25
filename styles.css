@@ -422,3 +422,19 @@ img {
 .formulario-soporte button:hover {
     background: #ff0000;
 }
+
+.rutinas, .competencias {
+    text-align: center;
+    padding: 40px;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+iframe {
+    border-radius: 10px;
+}
